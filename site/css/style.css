@@ -71,3 +71,49 @@ body {
 	background-color: #fcf; 
 	float: left;
 }
+
+.rec-wrap {
+	width: 250px;
+	height: 50px;
+	position: relative;
+	margin-left: 30px;
+	margin-top: 70px;
+	background-color: #fcc;
+	/*transform: skew(-10deg) rotate(-8deg);*/
+	/*transform-origin: left bottom;*/
+}
+.rec-wrap:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -49px;
+	width: 0;
+	height: 0;
+	border: 25px solid transparent;
+	border-left: 25px solid #fcc;
+}
+.rec-wrap p {
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.rec-pic {
+	position: absolute;
+	width: 250px;
+	height: 200px;
+	border: 5px solid #fff;
+	/*clip-path: circle(15px at 20px 20px);*/
+	 clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	/*clip: rect(0px,60px,200px,0px);*/
+}
+/*.pic {
+	width: 250px;
+	height: 200px;
+	background-color: #fcc;
+	background-image: url(../images/pic.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}*/
