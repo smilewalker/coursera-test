@@ -47,25 +47,27 @@ body {
 	width: 50px;
 	height: 50px;
 	border: 2px solid #000;
-	float: left;
+	/*float: left;*/
 }
 .float-wrap section {
 	clear: left;
 }
-.p1 { 
+.float-wrap .p1 { 
 	background-color: #fcc; 
-	/*float: left;*/
+	float: left;
 }
-.p2 { 
+.float-wrap .p2 { 
 	background-color: #ccc; 
-	/*float: right;*/
-	clear: left;
+	float: right;
+	height: 100px;
+	/*clear: left;*/
 }
-.p3 { 
+.float-wrap .p3 { 
 	background-color: #ffc; 
-	/*float: left;*/
+	float: left;
+	clear: right;
 }
-.p4 { 
+.float-wrap .p4 { 
 	background-color: #fcf; 
-	/*float: left;*/
+	float: left;
 }
