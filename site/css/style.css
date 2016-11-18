@@ -35,6 +35,37 @@ body {
 
 .test-img {
 	padding: 1rem;
-	
 	background-color: #fff;
+}
+
+.float-wrap {
+	width: 250px;
+	height: 250px;
+	background-color: #fff;
+}
+.float-wrap p {
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+	float: left;
+}
+.float-wrap section {
+	clear: left;
+}
+.p1 { 
+	background-color: #fcc; 
+	/*float: left;*/
+}
+.p2 { 
+	background-color: #ccc; 
+	/*float: right;*/
+	clear: left;
+}
+.p3 { 
+	background-color: #ffc; 
+	/*float: left;*/
+}
+.p4 { 
+	background-color: #fcf; 
+	/*float: left;*/
 }
