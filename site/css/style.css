@@ -77,7 +77,7 @@ body {
 	height: 50px;
 	position: relative;
 	margin-left: 30px;
-	margin-top: 70px;
+	margin-bottom: 70px;
 	background-color: #fcc;
 	/*transform: skew(-10deg) rotate(-8deg);*/
 	/*transform-origin: left bottom;*/
@@ -101,19 +101,46 @@ body {
 }
 
 .rec-pic {
-	position: absolute;
+	position: relative;
 	width: 250px;
 	height: 200px;
-	border: 5px solid #fff;
-	/*clip-path: circle(15px at 20px 20px);*/
-	 clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-	/*clip: rect(0px,60px,200px,0px);*/
-}
-/*.pic {
-	width: 250px;
-	height: 200px;
+	/*margin-bottom: 50px;*/
+	border: 6px solid #fff;
 	background-color: #fcc;
-	background-image: url(../images/pic.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
+	/*animation: star 1s alternate infinite;*/
+	/*-webkit-clip-path: circle(100px at 0px 0px);*/
+	/*-webkit-clip-path: inset(10%  round 20px );*/
+	/*-webkit-clip-path: ellipse(2px at 50px 50px);*/
+	-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 30%);
+
+}
+.rec-pic:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: -50px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 200px solid #fff;
+
+	/*border-left: 25px solid #fcc;*/
+}
+.pic {
+	width: 250px;
+	height: 200px;
+	background: url(../images/pic.jpg) no-repeat center;
+	background-size: cover;
+	-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 30%);
+
+}
+/*
+@keyframes star {
+	0% {
+	-webkit-clip-path: polygon(50% 0, 60% 30%, 100% 30%, 65% 60%, 75% 100%, 50% 75%, 25% 100%, 35% 60%, 0 30%, 40% 30%);
+
+	}
+	100% {
+	-webkit-clip-path: polygon(50% 10%, 60% 20%, 80% 30%, 65% 50%, 65% 80%, 50% 76%, 35% 80%, 35% 50%, 20% 30%, 40% 20%);
+	}
 }*/
